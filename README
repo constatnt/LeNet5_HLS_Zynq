@@ -19,3 +19,6 @@ A: In SDSoC tool, Pipeline includes not only the pipeline technique, but also lo
 
 Q: How can you measure the power consumption ?
 A: Using power like this one (https://www.youtube.com/watch?v=afhtMWh5P0I)
+
+Feature works
+I will upload MobileNet-HLS Code and SRCNN-HLS Code.
