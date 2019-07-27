@@ -4,8 +4,8 @@ Designed by Constant Park (sonicstage12@naver.com)
 This is original code of LeNet-5 Accleration with HLS.
 
 You can read the detailed information at this paper 
-- S.Park, ＂Implementation of a CNN accelerator on an Embedded SoC Platform using SDSoC", ICDSP 2018
-- C.Lee and S.Park, "Implementation of an FPGA-based CNN Accelerator using SDSoC", Annual Conference of the Korean Institute of Communication Sciences, 2017
+- S.Park,＂Implementation of a CNN accelerator on an Embedded SoC Platform using SDSoC", ICDSP 2018
+- C.Lee and S.Park,"Implementation of an FPGA-based CNN Accelerator using SDSoC", Annual Conference of the Korean Institute of Communication Sciences, 2017
 
 Copyright by Constant Park and Embedded SoC Lab (ESoC Lab). All implementation can be modified with any permission.
 It does not matter if you can make your project. 
