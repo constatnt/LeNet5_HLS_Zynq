@@ -1,12 +1,25 @@
-This is LeNet5 Accleration Code. Accelerated implementation using HSA (AMD A10 Procesesor).
+This is LeNet5 Accleration Code
+Accelerated implementation using Zynq (Zc706) and SDSoC
+Designed by Constant Park (sonicstage12@naver.com)
+This is original code of LeNet-5 Accleration with HLS.
 
-Designed by Constant Park (sonicstage12@naver.com). This is original code of LeNet-5 Accleration with OpenCL.
+You can read the detailed information at this paper 
+- S.Park,＂Implementation of a CNN accelerator on an Embedded SoC Platform using SDSoC", ICDSP 2018
+- C.Lee and S.Park,"Implementation of an FPGA-based CNN Accelerator using SDSoC", Annual Conference of the Korean Institute of Communication Sciences, 2017
 
-You can read the detailed information at this paper.
+Copyright by Constant Park and Embedded SoC Lab (ESoC Lab). All implementation can be modified with any permission.
+It does not matter if you can make your project. 
 
-S.Park, ＂Modified Convolution Neural Network for Highly Effective Parallel Processing", IEEE IRI, 2017.
-Copyright by Constant Park and Embedded SoC Lab (ESoC Lab).
+I give some Question and Answer.
+Q: How can you train this model ?
+A: I trained the LeNet-5 model using Tiny-DNN. Extract the weight from Tiny-DNN and Run this implementation on Zynq.
+But weights in this project is not trained model. So You should train LeNet-5 model and extract weights from DNN Framkeworks.
 
-All implementation can be modified with any permission.
+Q: In your paper, the upper loop is applied by Pipeline and the lower loop is applied Unroll. But it is impossible in SDSoC. How can you do that ?
+A: In SDSoC tool, Pipeline includes not only the pipeline technique, but also loop unrolling. If you apply a pipeline to the upper part and make it unroll well internally, both the pipeline and unroll apply.
 
-I give some Question and Answer. Q: How can you measure the power consumption ? A: Using power like this one (https://www.youtube.com/watch?v=afhtMWh5P0I)
+Q: How can you measure the power consumption ?
+A: Using power like this one (https://www.youtube.com/watch?v=afhtMWh5P0I)
+
+Feature works
+I will upload MobileNet-HLS Code and SRCNN-HLS Code.
