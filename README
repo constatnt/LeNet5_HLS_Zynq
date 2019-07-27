@@ -1,6 +1,7 @@
 This is LeNet5 Accleration Code
 Accelerated implementation using Zynq (Zc706) and SDSoC
 Designed by Constant Park (sonicstage12@naver.com)
+This is original code of LeNet-5 Accleration with HLS.
 
 You can read the detailed information at this paper 
 - S.Park, ＂Implementation of a CNN accelerator on an Embedded SoC Platform using SDSoC", ICDSP 2018
@@ -15,3 +16,6 @@ A: I trained the LeNet-5 model using Tiny-DNN. Extract the weight from Tiny-DNN 
 
 Q: In your paper, the upper loop is applied by Pipeline and the lower loop is applied Unroll. But it is impossible in SDSoC. How can you do that ?
 A: In SDSoC tool, Pipeline includes not only the pipeline technique, but also loop unrolling. If you apply a pipeline to the upper part and make it unroll well internally, both the pipeline and unroll apply.
+
+Q: How can you measure the power consumption ?
+A: Using power like this one (https://www.youtube.com/watch?v=afhtMWh5P0I)
